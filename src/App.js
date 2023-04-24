@@ -6,7 +6,7 @@ function App() {
 
   <>
     <p className="text-3xl font-bold underline">
-      Hello world!!!!!!!!!
+      Hello world!!!!!!
     </p>  
   </>
 
