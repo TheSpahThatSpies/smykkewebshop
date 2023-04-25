@@ -1,3 +1,49 @@
+
+
+
+
+
+.containeren {
+    display: block;
+    justify-content: space-between;
+    padding: 50px 20px;
+    background-color: #e0e0e0;
+}
+
+.first {
+    margin-bottom: 30px;
+    width: 50%;
+}
+
+.second {
+    margin-bottom: 30px;
+}
+
+.second  p {
+    margin: 5px 0px;
+}
+
+.tredje  p {
+    margin: 5px 0px;
+}
+
+.containeren h1 {
+    font-size: 23px;
+    font-weight: 700;
+    margin: 0;
+    margin-bottom: 10px;
+}
+
+
+
+
+
+@media screen and (min-width: 800px) {
+
+
+
+
+
 .containeren {
     display: flex;
     justify-content: space-between;
@@ -23,3 +69,9 @@
     margin: 0;
     margin-bottom: 10px;
 }
+
+
+
+
+  }
+
