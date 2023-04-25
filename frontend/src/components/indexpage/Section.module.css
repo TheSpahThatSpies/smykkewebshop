@@ -28,18 +28,18 @@
 }
 
 .first button {
-    background-color: rgb(24, 24, 24);
-    color: white;
+    background-color: white;
+    border: 2px solid black;
+    color: black;
     padding: 10px 25px;
     margin-top: 15px;
-    border: 1px solid black;
 }
 
 .first button:hover {
-    background-color: white;
-    border: 1px solid black;
-    color: black;
+    background-color: rgb(24, 24, 24);
+    color: white;
     transition: 0.3s;
+
 }
 
 .second {
