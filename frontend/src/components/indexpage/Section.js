@@ -27,7 +27,7 @@ export default function Section() {
 
     </div>
 
-    <div className=''>
+    <div className='image'>
         <img className={styling.billed} alt='billede' src='https://cdn.discordapp.com/attachments/1046732555325538349/1100126331179634851/jewelry.png'></img>
     </div>
 

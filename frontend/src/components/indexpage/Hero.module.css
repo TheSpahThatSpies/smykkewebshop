@@ -1,14 +1,13 @@
+
+
 .hero {
-    height: 350px;
     position: relative;
 }
+
 .hero img {
-    height: 350px;
     width: 100%;
-    background-repeat: no-repeat;
-
+    height: 400px;
 }
-
 .overlay {
     position: absolute;
     width: 100%;
@@ -17,18 +16,17 @@
     top: 0;
 }
 
-
-
 .herocontent {
     color: white;
     position: absolute;
-    top: 130px;
-    left: 70px;
+    top: 180px;
+    left: 60px;
     text-transform: uppercase;
+    text-align: center;
 }
 
 .herocontent h1 {
-    font-size: 65px;
+    font-size: 45px;
     margin: 0px;
 }
 .herocontent p {
@@ -44,7 +42,6 @@
     border: 2px solid white;
 }
 
-
 .herocontent button:hover {
     border: 2px solid white;
     color: white;
@@ -52,3 +49,50 @@
     transition: 0.3s;
 
 }
+
+
+
+/* desktop */
+@media screen and (min-width: 900px) {
+
+
+    .hero {
+        height: 350px;
+        position: relative;
+    }
+    .hero img {
+        height: 350px;
+        width: 100%;
+        background-repeat: no-repeat;
+
+    }
+
+    .overlay {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.519);
+        top: 0;
+    }
+
+
+
+    .herocontent {
+        color: white;
+        position: absolute;
+        top: 130px;
+        left: 70px;
+        text-transform: uppercase;
+        text-align: left;
+    }
+
+    .herocontent h1 {
+        font-size: 65px;
+        margin: 0px;
+    }
+
+
+
+  }
+
+
