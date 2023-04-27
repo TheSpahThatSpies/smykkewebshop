@@ -7,7 +7,7 @@
     display: block;
     justify-content: space-between;
     padding: 20px 20px;
-    background-color: #e0e0e0;
+    background-color: #e0e0e031;
 }
 
 .first {
@@ -74,7 +74,6 @@
     display: flex;
     justify-content: space-between;
     padding: 50px 20px;
-    background-color: #e0e0e0;
 }
 
 .first {
