@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 function Nav() {
 
@@ -7,9 +8,11 @@ function Nav() {
 
 <nav class="bg-white border-gray-200 bg-slate-100">
   <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
-  <a href="https://flowbite.com/" class="flex items-center">
+  <Link to={"/productpage"}>
+  <a class="flex items-center">
       <span class="self-center text-2xl font-semibold whitespace-nowrap text-slate-950">JOC</span>
   </a>
+  </Link>
   <div class="flex md:order-2">
 
     <button type="button" data-collapse-toggle="navbar-search" aria-controls="navbar-search" aria-expanded="false" class="md:hidden text-gray-500 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-700 focus:outline-none focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-700 rounded-lg text-sm p-2.5 mr-1" >
@@ -42,7 +45,7 @@ function Nav() {
       </div>
       <ul class="flex flex-col p-4 md:p-0 mt-4 font-light rounded-lg  md:flex-row md:space-x-8 md:mt-0">
         <li>
-          <a href="#" class="block py-2 pl-3 pr-4 text-slate-950 rounded md:p-0" aria-current="page">Rings</a>
+        <Link to={"/"}><a href="#" class="block py-2 pl-3 pr-4 text-slate-950 rounded md:p-0" aria-current="page">Rings</a></Link>
         </li>
         <li>
           <a href="#" class="block py-2 pl-3 pr-4 text-slate-950 rounded md:p-0 ">Bracelets</a>

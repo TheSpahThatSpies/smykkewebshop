@@ -1,13 +1,11 @@
 
-import Footer from './components/indexpage/Footer';
-import Nav from './components/nav';
+import Footer from '../components/indexpage/Footer';
 
 function Productpage() {
 
   return (
 
   <>
-    <Nav />
     <div className='container-2xl h-fit mx-auto p-3 flex flex-col md:flex-row'>
         <div className='flex flex-col'>
 
