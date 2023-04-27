@@ -8,7 +8,7 @@ function Nav() {
 
 <nav class="bg-white border-gray-200 bg-slate-100">
   <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
-  <Link to={"/productpage"}>
+  <Link to={"/productinfo"}>
   <a class="flex items-center">
       <span class="self-center text-2xl font-semibold whitespace-nowrap text-slate-950">JOC</span>
   </a>
