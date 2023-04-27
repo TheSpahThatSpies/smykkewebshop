@@ -34,8 +34,8 @@
 }
 
 .herocontent button {
-    background-color: white;
-    color: black;
+    background-color: transparent;
+    color: white;
     padding: 7px 20px;
     text-transform: uppercase;
     margin-top: 20px;
@@ -43,9 +43,9 @@
 }
 
 .herocontent button:hover {
+    background-color: white;
     border: 2px solid white;
-    color: white;
-    background-color: transparent;
+    color: black;
     transition: 0.3s;
 
 }
@@ -56,12 +56,9 @@
 @media screen and (min-width: 900px) {
 
 
-    .hero {
-        height: 350px;
-        position: relative;
-    }
+
     .hero img {
-        height: 350px;
+        height: 620px;
         width: 100%;
         background-repeat: no-repeat;
 
@@ -70,7 +67,7 @@
     .overlay {
         position: absolute;
         width: 100%;
-        height: 100%;
+        height: 620px;
         background-color: rgba(0, 0, 0, 0.519);
         top: 0;
     }
@@ -80,15 +77,22 @@
     .herocontent {
         color: white;
         position: absolute;
-        top: 130px;
+        top: 250px;
         left: 70px;
         text-transform: uppercase;
         text-align: left;
     }
 
     .herocontent h1 {
-        font-size: 65px;
+        font-size: 75px;
         margin: 0px;
+    }
+    .herocontent p {
+        font-size: 25px;
+    }
+
+    .herocontent button {
+        padding: 10px 30px;
     }
 
 

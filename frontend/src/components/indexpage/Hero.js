@@ -1,12 +1,13 @@
 import React from 'react'
 import styling from './Hero.module.css'
+import herobanner from '../../images/jewelry.png';
 
 export default function hero() {
   return (
     <>
 
         <div className={styling.hero}>
-            <img alt='jewels' src='https://cdn.discordapp.com/attachments/1046732555325538349/1100126331179634851/jewelry.png'></img>
+            <img alt='jewels' src={herobanner}></img>
 
             <div className={styling.overlay}></div>
 
