@@ -8,39 +8,66 @@ function Cart() {
   <>
     <div className='container-2xl h-fit mx-auto p-3 flex flex-col md:flex-row'>
 
-        <div className='flex flex-col w-1/2'>
+        <div className='flex flex-col md:w-1/2'>
         <p className='text-3xl'>Cart</p>
-        <dl class="md:w-1/2 text-gray-900 divide-y divide-gray-200 divide-gray-700">
-            <div class="flex flex-col pb-3">
-                <dt class="mb-1 text-gray-500 md:text-lg dark:text-gray-400">Email address</dt>
-                <dd class="text-lg font-semibold">yourname@flowbite.com</dd>
-            </div>
-            <div class="flex flex-col py-3">
-                <dt class="mb-1 text-gray-500 md:text-lg dark:text-gray-400">Home address</dt>
-                <dd class="text-lg font-semibold">92 Miles Drive, Newark, NJ 07103, California, USA</dd>
-            </div>
-            <div class="flex flex-col pt-3">
-                <dt class="mb-1 text-gray-500 md:text-lg dark:text-gray-400">Phone number</dt>
-                <dd class="text-lg font-semibold">+00 123 456 789 / +12 345 678</dd>
-            </div>
-        </dl>
+
+                        <ul class=" divide-y divide-gray-200 dark:divide-gray-700">
+                <li class="pb-3 sm:pb-4">
+                    <div class="flex items-center space-x-4">
+                        <div class="flex-shrink-0 bg-black">
+                            <img class="w-14 h-14 " src="/docs/images/people/profile-picture-1.jpg" alt="Neil image"></img>
+                        </div>
+                        <div class="flex-1 min-w-0">
+                            <p class="text-sm font-medium text-gray-900">
+                            Name of product
+                            </p>
+                            <p class="text-sm text-gray-500">
+                            description
+                            </p>
+                            <p class="text-sm text-gray-500 truncate dark:text-gray-400">
+                            $Price
+                            </p>
+                        </div>
+                        <div class="inline-flex items-center text-base font-semibold text-gray-900">
+                            
+                        </div>
+                    </div>
+                </li>
+                <li class="pb-3 sm:pb-4">
+                    <div class="flex items-center space-x-4">
+                        <div class="flex-shrink-0 bg-black">
+                            <img class="w-14 h-14 " src="/docs/images/people/profile-picture-1.jpg" alt="Neil image"></img>
+                        </div>
+                        <div class="flex-1 min-w-0">
+                            <p class="text-sm font-medium text-gray-900">
+                            Name of product
+                            </p>
+                            <p class="text-sm text-gray-500">
+                            description
+                            </p>
+                            <p class="text-sm text-gray-500 truncate dark:text-gray-400">
+                            $Price
+                            </p>
+                        </div>
+                        <div class="inline-flex items-center text-base font-semibold text-gray-900">
+                            
+                        </div>
+                    </div>
+                </li>
+                </ul>
+
 
         </div>
 
-        <div className='md:ml-3'>
-            <p className='text-4xl'>Name of product</p>
-            <p className='text-lg'>Category</p>
-            <p className='text-md'>
-            Product description - Lots of fancy words
-            About this product, like how it was made 
-            Who it was made for and maybe some other
-            Smart words.
-            </p>
-            <p className='text-md'>$Price</p>
-            <button class="border-2 border-slate-800 w-full md:w-64  py-2 text-slate-800 cursor-pointer hover:bg-gray-800 hover:text-gray-200">
-             ADD TO CART
-            </button>
-            <p className='text-md'>Stock information</p>
+        <div className='md:ml-3 md:w-1/2 min-h-[100%] border-solid border-slate-100 flex flex-col justify-between'>
+        <p className='text-3xl'>CHECKOUT</p>
+        <div className='flex justify-between'> <div className='flex w-1/2 justify-between'><p>NOP</p><p>$PRICE</p><p>AMOUT</p></div> <p>= $TOTAL</p></div>
+        <div>
+            <div className='flex justify-between'><p>TOTAL</p><p>= TOTAL</p></div>
+                <button class="border-2 border-slate-800 w-full  py-2 text-slate-800 cursor-pointer hover:bg-gray-800 hover:text-gray-200">
+                    GO TO PAYMENT
+                </button>
+            </div>
         </div>
     </div>
     <Footer></Footer>
