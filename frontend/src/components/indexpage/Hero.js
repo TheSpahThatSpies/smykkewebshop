@@ -6,7 +6,7 @@ export default function hero() {
     <>
 
         <div className={styling.hero}>
-            <img alt='jewels' src='https://dirksjewellery.dk/wp-content/uploads/2023/01/Herobanner_smykker.png'></img>
+            <img alt='jewels' src='https://cdn.discordapp.com/attachments/1046732555325538349/1100126331179634851/jewelry.png'></img>
 
             <div className={styling.overlay}></div>
 
