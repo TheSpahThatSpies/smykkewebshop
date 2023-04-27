@@ -1,8 +1,8 @@
-import TitleCard from '../components/productpage/titlecard'
+import TitleCard from '../components/productpage/titlecard';
 import MostPopular from '../components/indexpage/MostPopular';
 import Footer from '../components/indexpage/Footer';
 
-function Home() {
+function ProductPage() {
 
   return (
 
@@ -11,9 +11,7 @@ function Home() {
     <MostPopular></MostPopular>
     <Footer></Footer>
   </>
-
-  
 );
 }
 
-export default Home;
+export default ProductPage;
