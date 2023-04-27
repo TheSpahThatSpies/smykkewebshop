@@ -1,7 +1,7 @@
 
 import Footer from '../components/indexpage/Footer';
 
-function Productpage() {
+function Productinfo() {
 
   return (
 
@@ -41,4 +41,4 @@ function Productpage() {
 );
 }
 
-export default Productpage;
+export default Productinfo;
