@@ -8,9 +8,9 @@ function Cart() {
   <>
     <div className='container-2xl h-fit mx-auto p-3 flex flex-col md:flex-row'>
 
-        <div className='flex flex-col'>
+        <div className='flex flex-col w-1/2'>
         <p className='text-3xl'>Cart</p>
-        <dl class="max-w-md text-gray-900 divide-y divide-gray-200 divide-gray-700">
+        <dl class="md:w-1/2 text-gray-900 divide-y divide-gray-200 divide-gray-700">
             <div class="flex flex-col pb-3">
                 <dt class="mb-1 text-gray-500 md:text-lg dark:text-gray-400">Email address</dt>
                 <dd class="text-lg font-semibold">yourname@flowbite.com</dd>
