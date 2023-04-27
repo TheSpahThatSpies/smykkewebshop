@@ -19,10 +19,13 @@
 .herocontent {
     color: white;
     position: absolute;
-    top: 180px;
-    left: 60px;
     text-transform: uppercase;
     text-align: center;
+    top: 50%;
+    left: 0;
+    right: 0;
+    margin: auto;
+    transform: translateY(-50%);
 }
 
 .herocontent h1 {
