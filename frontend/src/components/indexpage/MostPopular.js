@@ -35,6 +35,12 @@ export default function MostPopular() {
       "name": "produkt 5",
       "price": 669,
       "image": "https://www.stokvaerk.dk/shared/62/554/pico-smykker-olive-grande-hoops-forgyldt_1180x1180c.jpg"
+    },
+    {
+      "id": 5,
+      "name": "produkt 5",
+      "price": 669,
+      "image": "https://www.stokvaerk.dk/shared/62/554/pico-smykker-olive-grande-hoops-forgyldt_1180x1180c.jpg"
     }
 
   ]);

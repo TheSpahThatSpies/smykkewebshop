@@ -11,15 +11,17 @@ export default function hero() {
 
             <div className={styling.overlay}></div>
 
-        </div>
-
-
-
-        <div className={styling.herocontent}>
+            <div className={styling.herocontent}>
             <h1>Jewelry by JOC</h1>
             <p>handcrafted by professionals</p>
             <button>Products</button>
         </div>
+
+        </div>
+
+
+
+
 
     </>
   )

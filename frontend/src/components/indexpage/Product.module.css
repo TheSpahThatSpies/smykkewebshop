@@ -9,7 +9,7 @@
 
 .productImg {
     margin: auto;
-    width: 200px;
+    width: 150px;
 }
 
 .btn {
@@ -33,9 +33,38 @@
     margin-bottom: 5px;
 }
 
+@media screen and (min-width: 500px) {
 
 
-@media screen and (min-width: 900px) {
+
+    .productContainer {
+        width: 40%;
+        margin: 0px 10px;
+        margin-bottom: 0px;
+    }
+    
+
+
+  }
+
+
+  @media screen and (min-width: 700px) {
+
+
+
+    .productContainer {
+        width: 30%;
+        margin: 0px 10px;
+        margin-bottom: 0px;
+    }
+    
+
+
+  }
+
+
+
+@media screen and (min-width: 1050px) {
 
 
 
@@ -43,6 +72,11 @@
         width: fit-content;
         margin: 0px 10px;
         margin-bottom: 0px;
+    }
+
+    .productImg {
+        margin: auto;
+        width: 150px;
     }
     
 
