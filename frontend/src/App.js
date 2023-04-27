@@ -1,18 +1,18 @@
-import './App.css';
-import Hero from './components/indexpage/Hero';
-import MostPopular from './components/indexpage/MostPopular';
-import Section from './components/indexpage/Section';
-import Footer from './components/indexpage/Footer';
+import { Routes, Route } from 'react-router-dom';
+import Home from './pages/home';
+import Productinfo from './pages/productinfo';
+import Nav from './components/nav';
 
 function App() {
 
   return (
 
   <>
-    <Hero></Hero>
-    <MostPopular></MostPopular>
-    <Section></Section>
-    <Footer></Footer>
+  <Nav />
+       <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/productinfo" element={<Productinfo />} />
+       </Routes>
   </>
 
   
