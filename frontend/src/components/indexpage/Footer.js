@@ -47,9 +47,10 @@ export default function Footer() {
 
     </div>
 
-    <div className={styling.footer}>
+    <div className={styling.footeren}>
       <p>Copyright 2023 - JOC</p>
     </div>
+    
     </>
   )
 }
