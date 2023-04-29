@@ -37,8 +37,8 @@ export default function MostPopular() {
       "image": "https://dk.pandora.net/on/demandware.static/-/Sites-da-DK-Library/default/dwa20922ea/images/size-guide/Pandora_Moments_Snake_Chain_Sliding_Bracelets.png"
     },
     {
-      "id": 5,
-      "name": "produkt 5",
+      "id": 6,
+      "name": "produkt 6",
       "price": 669,
       "image": "https://dk.pandora.net/dw/image/v2/BFCR_PRD/on/demandware.static/-/Sites-pandora-master-catalog/default/dwda22fa13/productimages/singlepackshot/162627C01_RGB.png?sw=379&sh=379&sm=fit&sfrm=png&bgcolor=00000000"
       
