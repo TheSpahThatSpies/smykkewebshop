@@ -1,6 +1,8 @@
 import Hero from '../components/indexpage/Hero'
-import MostPopular from '../components/indexpage/MostPopular';
-import Footer from '../components/indexpage/Footer';
+import {PRODUCTS} from '../Products';
+import Product from './Product';
+import styling from '../components/indexpage/Mostpopular.module.css';
+
 
 function Home() {
 
@@ -8,8 +10,19 @@ function Home() {
 
   <>
     <Hero></Hero>
-    <MostPopular></MostPopular>
-    <Footer></Footer>
+
+    <div className='shop'>
+      <div className='shopTitle'>
+        <h1>JOC SHOP</h1>
+      </div>
+      <div className={styling.container}>
+        {PRODUCTS.map((product) => {
+          return <Product data={product}/>
+        })}
+      </div>
+
+    </div>
+
   </>
 
   

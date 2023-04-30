@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import styling from './Mostpopular.module.css';
-import Product from './Product';
+import Product from './MostPopularProduct';
 
 
 export default function MostPopular() {

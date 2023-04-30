@@ -1,13 +1,8 @@
 import React from 'react'
-import styling from './Product.module.css';
+import styling from './MostPopularProduct.module.css';
 
 
-export default function Product(props) {
-
-
-  const sendProductDetail = function(details) {
-    console.log(details); 
-  }
+export default function MostPopularProduct(props) {
 
   return (
 
@@ -16,11 +11,10 @@ export default function Product(props) {
         <img alt='product' src={props.image} className={styling.productImg}></img>
         <p className={styling.name}> {props.name} </p>
         <p className={styling.price}>{props.price} DKK</p>
-        <button  className={styling.btn} onClick={() => {
-              sendProductDetail(props)
-            }}>Show more</button>
+        <button className={styling.btn}>Add to cart</button>
       </div>
     </>
  
   )
+
 }
