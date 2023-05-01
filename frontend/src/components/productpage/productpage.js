@@ -1,8 +1,8 @@
 import {PRODUCTS} from '../../Products';
 import Product from './Product';
 import Footer from '../indexpage/Footer';
-import Hero from '../indexpage/Hero';
 import styling from '../productpage/productpage.module.css';
+import HeroForProductpage from './HeroForProductpage';
 
 
 function Home() {
@@ -10,12 +10,12 @@ function Home() {
   return (
 
   <>
-    <Hero></Hero>
+    <HeroForProductpage></HeroForProductpage>
 
     <div className={styling.shop}>
 
       <div className='shopTitle'>
-        <h1>JOC SHOP</h1>
+        <h1>ALL PRODUCTS</h1>
       </div>
       <div className={styling.container}>
         {PRODUCTS.map((product) => {

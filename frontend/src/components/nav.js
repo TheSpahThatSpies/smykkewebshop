@@ -49,16 +49,13 @@ function Nav() {
       </div>
       <ul class="flex flex-col p-4 md:p-0 mt-4 font-light rounded-lg  md:flex-row md:space-x-8 md:mt-0">
         <li>
-        <Link to={"/"}><a href="/" class="block py-2 pl-3 pr-4 text-slate-950 rounded md:p-0" aria-current="page">Rings</a></Link>
+        <Link to={"/"}><a href="/" class="block py-2 pl-3 pr-4 text-slate-950 rounded md:p-0" aria-current="page">Home</a></Link>
         </li>
         <li>
-          <a href="/" class="block py-2 pl-3 pr-4 text-slate-950 rounded md:p-0 ">Bracelets</a>
+          <a href="/products" class="block py-2 pl-3 pr-4 text-slate-950 rounded md:p-0 ">Products</a>
         </li>
         <li>
-          <a href="/" class="block py-2 pl-3 pr-4 text-slate-950 rounded md:p-0">Earrings</a>
-        </li>
-        <li>
-          <a href="/" class="block py-2 pl-3 pr-4 text-slate-950 rounded md:p-0">Necklaces</a>
+          <a href="/" class="block py-2 pl-3 pr-4 text-slate-950 rounded md:p-0">About</a>
         </li>
       </ul>
     </div>
