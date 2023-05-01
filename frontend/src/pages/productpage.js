@@ -2,6 +2,7 @@ import Hero from '../components/indexpage/Hero'
 import {PRODUCTS} from '../Products';
 import Product from './Product';
 import styling from '../components/indexpage/Mostpopular.module.css';
+import Footer from '../components/indexpage/Footer';
 
 
 function Home() {
@@ -12,6 +13,7 @@ function Home() {
     <Hero></Hero>
 
     <div className='shop'>
+
       <div className='shopTitle'>
         <h1>JOC SHOP</h1>
       </div>
@@ -22,6 +24,9 @@ function Home() {
       </div>
 
     </div>
+
+    <Footer></Footer>
+
 
   </>
 
