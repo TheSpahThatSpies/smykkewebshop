@@ -1,6 +1,8 @@
 .container {
     width: 60%;
     margin: 50px auto;
+    padding: 20px;
+    background: #00000012;
 }
 
 .continue {
@@ -27,4 +29,8 @@
 .center span {
     font-weight: bold;
     font-size: 17px;
+}
+
+.overskrift {
+    margin: 0px;
 }

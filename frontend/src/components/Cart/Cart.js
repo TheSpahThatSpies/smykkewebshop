@@ -15,7 +15,7 @@ export default function Card() {
     <>
 
         <div className={styling.container}>
-          <h1 className='text-3xl'>your card items</h1>
+          <h1 className={styling.overskrift}>your card items</h1>
           <ul class=" divide-y divide-gray-200 dark:divide-gray-700">
             <li className='listtt'>
               {PRODUCTS.map((product) => {
@@ -30,9 +30,8 @@ export default function Card() {
             <Link to={"/"}>
               <button className={styling.continue}>Continue shopping</button>
             </Link>
-            <button className={styling.checkOut}>Checkout</button>
+            <button className={styling.checkOut}>Check out</button>
           </div>
-
         </div>
 
     </>
