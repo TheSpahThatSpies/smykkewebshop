@@ -24,7 +24,12 @@ export default function Card() {
               })}
             </li>
           </ul>
-          <p>total: {totalAmount}</p>
+          <div className={styling.center}>
+            <p>total: {totalAmount} DKK</p>
+            <button className={styling.continue}>Continue shopping</button>
+            <button className={styling.checkOut}>Checkout</button>
+          </div>
+
         </div>
 
     </>
