@@ -13,7 +13,7 @@ export default function Section() {
             <h1 className={styling.showlove}>Show your love</h1>
             <p className={styling.txt}>Get the perfect gift for your girlfriend, mom or wife</p>
             <p className={styling.txtSmall}>Some very inspiring text about why you should buy our product to who you care about. text should be a little longer than this and also with a beautiful img inside</p>
-            <Link to={"/productpage"}>
+            <Link to={"/products"}>
               <button>Products</button>
             </Link>
         </div>

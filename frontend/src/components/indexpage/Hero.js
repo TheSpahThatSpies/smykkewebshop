@@ -15,7 +15,7 @@ export default function hero() {
             <div className={styling.herocontent}>
             <h1>Jewelry by JOC</h1>
             <p>Handcrafted by professionals</p>
-            <Link to={"/productpage"}>
+            <Link to={"/products"}>
               <button>Products</button>
             </Link>
         </div>
