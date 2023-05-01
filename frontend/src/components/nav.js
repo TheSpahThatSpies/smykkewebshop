@@ -8,8 +8,6 @@ function Nav() {
 
   const { totalPopulation } = useContext(ShopContext);
 
-
-
   return (
 
 
@@ -59,10 +57,10 @@ function Nav() {
         <Link to={"/"}><a href="/" class="block py-2 pl-3 pr-4 text-slate-950 rounded md:p-0" aria-current="page">Home</a></Link>
         </li>
         <li>
-          <a href="/products" class="block py-2 pl-3 pr-4 text-slate-950 rounded md:p-0 ">Products</a>
+          <Link to={"/products"} class="block py-2 pl-3 pr-4 text-slate-950 rounded md:p-0 ">Products</Link>
         </li>
         <li>
-          <a href="/" class="block py-2 pl-3 pr-4 text-slate-950 rounded md:p-0">About</a>
+          <Link to={"/"} class="block py-2 pl-3 pr-4 text-slate-950 rounded md:p-0">About</Link>
         </li>
       </ul>
     </div>
