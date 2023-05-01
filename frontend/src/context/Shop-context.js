@@ -41,7 +41,14 @@ export default function ShopcontextProvider(props) {
         setCartItems( (prev) => ({...prev, [itemId]: prev[itemId] - 1 }))
     }
 
-    const contextValue = {cartItems, addToCart, removeFromCart, getTotalCartAmount};
+    let totalPopulation = 0;
+    let keys = Object.values(cartItems);
+
+    keys.forEach((number) => {
+        totalPopulation += number;
+      });
+
+    const contextValue = {cartItems, addToCart, removeFromCart, getTotalCartAmount, totalPopulation};
 
     console.log(cartItems);
 
