@@ -35,6 +35,48 @@ export const PRODUCTS = [
         "price": 669,
         "image": "https://spiritofwonder.dk/wp-content/uploads/2022/12/chakra-scaled.jpg"
         
+      },
+      {
+        "id": 7,
+        "name": "produkt 6",
+        "price": 669,
+        "image": "https://spiritofwonder.dk/wp-content/uploads/2022/12/chakra-scaled.jpg"
+        
+      },
+      {
+        "id": 8,
+        "name": "produkt 6",
+        "price": 669,
+        "image": "https://spiritofwonder.dk/wp-content/uploads/2022/12/chakra-scaled.jpg"
+        
+      },
+      {
+        "id": 9,
+        "name": "produkt 6",
+        "price": 669,
+        "image": "https://spiritofwonder.dk/wp-content/uploads/2022/12/chakra-scaled.jpg"
+        
+      },
+      {
+        "id": 10,
+        "name": "produkt 6",
+        "price": 669,
+        "image": "https://spiritofwonder.dk/wp-content/uploads/2022/12/chakra-scaled.jpg"
+        
+      },
+      {
+        "id": 11,
+        "name": "produkt 6",
+        "price": 669,
+        "image": "https://spiritofwonder.dk/wp-content/uploads/2022/12/chakra-scaled.jpg"
+        
+      },
+      {
+        "id": 12,
+        "name": "produkt 6",
+        "price": 669,
+        "image": "https://spiritofwonder.dk/wp-content/uploads/2022/12/chakra-scaled.jpg"
+        
       }
 
 ]

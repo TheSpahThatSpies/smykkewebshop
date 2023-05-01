@@ -1,6 +1,6 @@
 import React, {useContext} from 'react'
-import styling from '../components/indexpage/MostPopularProduct.module.css';
-import { ShopContext } from '../context/Shop-context';
+import styling from '../productpage/product.module.css';
+import { ShopContext } from '../../context/Shop-context';
 
 export default function Product(props) {
 

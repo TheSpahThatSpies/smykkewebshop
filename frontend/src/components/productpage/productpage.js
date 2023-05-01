@@ -1,8 +1,8 @@
-import Hero from '../components/indexpage/Hero'
-import {PRODUCTS} from '../Products';
+import {PRODUCTS} from '../../Products';
 import Product from './Product';
-import styling from '../components/indexpage/Mostpopular.module.css';
-import Footer from '../components/indexpage/Footer';
+import Footer from '../indexpage/Footer';
+import Hero from '../indexpage/Hero';
+import styling from '../productpage/productpage.module.css';
 
 
 function Home() {
@@ -12,7 +12,7 @@ function Home() {
   <>
     <Hero></Hero>
 
-    <div className='shop'>
+    <div className={styling.shop}>
 
       <div className='shopTitle'>
         <h1>JOC SHOP</h1>
