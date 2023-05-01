@@ -3,6 +3,7 @@ import {PRODUCTS} from '../../Products';
 import { ShopContext } from '../../context/Shop-context';
 import CardItem from './CartItem';
 import styling from './Cart.module.css'
+import { Link } from 'react-router-dom';
 
 
 export default function Card() {
@@ -25,8 +26,10 @@ export default function Card() {
             </li>
           </ul>
           <div className={styling.center}>
-            <p>total: {totalAmount} DKK</p>
-            <button className={styling.continue}>Continue shopping</button>
+            <p>total: <span>{totalAmount} DKK</span></p>
+            <Link to={"/"}>
+              <button className={styling.continue}>Continue shopping</button>
+            </Link>
             <button className={styling.checkOut}>Checkout</button>
           </div>
 
