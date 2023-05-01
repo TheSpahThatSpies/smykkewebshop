@@ -10,6 +10,10 @@
     flex-wrap: wrap;
 }
 
+.produkt {
+    background-color: blue;
+}
+
 h1 {
     margin: 20px;
 

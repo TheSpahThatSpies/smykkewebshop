@@ -4,7 +4,7 @@
     margin: 0px 10px;
     margin-bottom: 50px;
     text-align: center;
-    margin-bottom:50px !important;
+    margin-bottom: 40px !important;
 }
 
 
@@ -71,9 +71,9 @@
 
 
     .productContainer {
-        width: fit-content;
         margin: 0px 10px;
         margin-bottom: 0px;
+        width: 20%;
     }
 
     .productImg {
