@@ -1,6 +1,7 @@
 import React, {useContext} from 'react'
 import styling from '../productpage/product.module.css';
 import { ShopContext } from '../../context/Shop-context';
+import { Link } from 'react-router-dom';
 
 export default function Product(props) {
 
@@ -16,7 +17,9 @@ export default function Product(props) {
   return (
     <>
       <div className={styling.productContainer}>
+      <Link to={`/productinfo/${id}`} product={props.product}>
         <img alt='product' src={image} className={styling.productImg}></img>
+      </Link>
         <p className={styling.name}> {name} </p>
         <p className={styling.price}>{price} DKK</p>
 <button className={styling.btn} onClick={() => {
