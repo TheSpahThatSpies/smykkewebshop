@@ -1,4 +1,5 @@
 import { useContext, useEffect } from 'react';
+import { useParams } from 'react-router-dom';
 import Product from './Product';
 import Footer from '../indexpage/Footer';
 import styling from '../productpage/productpage.module.css';
@@ -7,7 +8,12 @@ import { ShopContext } from '../../context/Shop-context';
 
 function Home() {
   const { products, setProducts } = useContext(ShopContext);
+  const { category } = useParams();
 
+  // Filter the products that match the selected category
+  const filteredProducts = category
+    ? products.filter((product) => product.acf.category === category)
+    : products;
 
   return (
     <>
@@ -19,7 +25,7 @@ function Home() {
         </div>
 
         <div className={styling.container}>
-          {products.map((product) => (
+        {filteredProducts.map((product) => (
             <Product key={product.id} id={product.id} data={product.acf} />
           ))}
         </div>
