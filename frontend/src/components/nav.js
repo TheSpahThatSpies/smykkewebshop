@@ -1,10 +1,12 @@
-import React  from 'react';
+import React, {useContext}  from 'react';
 import { Link } from 'react-router-dom';
+import { ShopContext } from '../context/Shop-context';
+
 
 
 function Nav() {
 
-
+  const { totalPopulation } = useContext(ShopContext);
 
   return (
 
@@ -34,7 +36,7 @@ function Nav() {
     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.0" stroke="currentColor" class="w-6 h-6">
     <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 10.5V6a3.75 3.75 0 10-7.5 0v4.5m11.356-1.993l1.263 12c.07.665-.45 1.243-1.119 1.243H4.25a1.125 1.125 0 01-1.12-1.243l1.264-12A1.125 1.125 0 015.513 7.5h12.974c.576 0 1.059.435 1.119 1.007zM8.625 10.5a.375.375 0 11-.75 0 .375.375 0 01.75 0zm7.5 0a.375.375 0 11-.75 0 .375.375 0 01.75 0z" />
     </svg>
-    <div class="absolute inline-flex items-center justify-center w-5 h-5 text-xs font-bold text-white bg-green-500  rounded-full -top-1 -right-2">{0}</div>
+    <div class="absolute inline-flex items-center justify-center w-5 h-5 text-xs font-bold text-white bg-green-500  rounded-full -top-1 -right-2">{totalPopulation}</div>
       </button>
     </Link>
 
@@ -55,10 +57,10 @@ function Nav() {
         <Link to={"/"}><a href="/" class="block py-2 pl-3 pr-4 text-slate-950 rounded md:p-0" aria-current="page">Home</a></Link>
         </li>
         <li>
-          <a href="/products" class="block py-2 pl-3 pr-4 text-slate-950 rounded md:p-0 ">Products</a>
+          <Link to={"/products"} class="block py-2 pl-3 pr-4 text-slate-950 rounded md:p-0 ">Products</Link>
         </li>
         <li>
-          <a href="/" class="block py-2 pl-3 pr-4 text-slate-950 rounded md:p-0">About</a>
+          <Link to={"/"} class="block py-2 pl-3 pr-4 text-slate-950 rounded md:p-0">About</Link>
         </li>
       </ul>
     </div>
