@@ -4,7 +4,11 @@ import { ShopContext } from '../../context/Shop-context';
 
 export default function Product(props) {
 
-  const {id, name, price, image} = props.data;
+  const { id } = props;
+  const { name, price, image } = props.data;
+
+
+
 
   const { addToCart, cartItems } = useContext(ShopContext);
   const cartItemAmount = cartItems[id];
@@ -15,8 +19,11 @@ export default function Product(props) {
         <img alt='product' src={image} className={styling.productImg}></img>
         <p className={styling.name}> {name} </p>
         <p className={styling.price}>{price} DKK</p>
-        <button className={styling.btn} onClick={() => addToCart(id)}>Add to cart {cartItemAmount > 0 && <>({cartItemAmount})</> }</button>
+<button className={styling.btn} onClick={() => {
+  addToCart(id);
+}}>Add to cart {cartItemAmount > 0 && <>({cartItemAmount})</> }</button>
       </div>
     </>
   )
 }
+

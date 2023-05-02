@@ -1,60 +1,82 @@
-import React, { createContext, useState } from 'react'
-import { PRODUCTS } from '../Products';
+import React, { createContext, useState, useEffect } from 'react';
 
 export const ShopContext = createContext(null);
 
 
-const getDefaultCart = () => {
-    let cart = {}
 
-    for(let i = 1; i < PRODUCTS.length +1; i++) {
-        cart[i] = 0;
-    }
+const getDefaultCart = (products) => {
+  let cart = {};
 
-    return cart;
-}
+  products.forEach((product) => {
+    cart[product.id] = 0;
+  });
 
-
+  return cart;
+};
 
 export default function ShopcontextProvider(props) {
+  const [products, setProducts] = useState([]);
+  const [cartItems, setCartItems] = useState({});
 
-    const [cartItems, setCartItems] = useState(getDefaultCart());
-
-    const getTotalCartAmount = () => {
-        let totalAmount = 0;
-
-        for(const item in cartItems) {
-            if(cartItems[item] > 0) {
-                let itemInfo = PRODUCTS.find((product) => product.id === Number(item));
-
-                totalAmount += cartItems[item] * itemInfo.price;
-            }
-        }
-        return totalAmount;
+  useEffect(() => {
+    const fetchProducts = async () => {
+      const response = await fetch('http://jacobgervin.dk/wp-json/wp/v2/product');
+      const data = await response.json();
+      setProducts(data);
+      
     };
+    fetchProducts();
+  }, [setProducts]);
+  
+  useEffect(() => {
+    setCartItems(getDefaultCart(products));
+  }, [products]);
 
-    const addToCart = (itemId) => {
-        setCartItems( (prev) => ({...prev, [itemId]: prev[itemId] + 1 }))
+  const addToCart = (itemId) => {
+    
+    setCartItems((prev) => ({ ...prev, [itemId]: prev[itemId] + 1 }));
+  };
+
+  const removeFromCart = (itemId) => {
+    setCartItems((prev) => ({ ...prev, [itemId]: prev[itemId] - 1 }));
+  };
+
+  const getTotalCartAmount = () => {
+    let totalAmount = 0;
+
+    for (const item in cartItems) {
+      if (cartItems[item] > 0) {
+        let itemInfo = products.find(
+          (product) => product.id === Number(item)
+        );
+
+        totalAmount += cartItems[item] * itemInfo.acf.price;
+      }
     }
+    return totalAmount;
+  };
 
-    const removeFromCart = (itemId) => {
-        setCartItems( (prev) => ({...prev, [itemId]: prev[itemId] - 1 }))
-    }
+  let totalPopulation = 0;
+  let keys = Object.values(cartItems);
 
-    let totalPopulation = 0;
-    let keys = Object.values(cartItems);
+  keys.forEach((number) => {
+    totalPopulation += number;
+  });
 
-    keys.forEach((number) => {
-        totalPopulation += number;
-      });
 
-    const contextValue = {cartItems, addToCart, removeFromCart, getTotalCartAmount, totalPopulation};
-
-    console.log(cartItems);
+  const contextValue = {
+    products,
+    setProducts,
+    cartItems,
+    addToCart,
+    removeFromCart,
+    getTotalCartAmount,
+    totalPopulation,
+  };
 
   return (
     <ShopContext.Provider value={contextValue}>
-        {props.children}
+      {props.children}
     </ShopContext.Provider>
-  )
+  );
 }
