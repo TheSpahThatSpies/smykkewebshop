@@ -68,9 +68,6 @@ function Nav() {
         <li>
           <Link to={"/products/earrings"} class="block py-2 pl-3 pr-4 text-slate-950 rounded md:p-0 ">Earrings</Link>
         </li>
-        <li>
-          <Link to={"/"} class="block py-2 pl-3 pr-4 text-slate-950 rounded md:p-0">About</Link>
-        </li>
       </ul>
     </div>
   </div>
