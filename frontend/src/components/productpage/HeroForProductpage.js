@@ -2,7 +2,7 @@ import React from 'react'
 import styling from '../productpage/HeroForProductpage.module.css';
 import banner from '../../images/je.jpeg';
 
-export default function HeroForProductpage() {
+export default function HeroForProductpage(props) {
   return (
     <>
 
@@ -11,7 +11,7 @@ export default function HeroForProductpage() {
 
             <div className={styling.overlay}></div>
             <div className={styling.herocontent}>
-                <h1>Products by JOC</h1>
+                <h1>{props.category ? ` ${props.category.toUpperCase()}` : ''} by JOC</h1>
                 <p>Handcrafted by professionals</p>
                 <button>Products</button>
             </div>

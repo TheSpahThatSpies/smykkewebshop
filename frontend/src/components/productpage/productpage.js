@@ -10,6 +10,10 @@ function Home() {
   const { products, setProducts } = useContext(ShopContext);
   const { category } = useParams();
 
+  useEffect(() => {
+    document.title = category ? `${category.toUpperCase()} | My Shop` : 'My Shop';
+  }, [category]);
+
   // Filter the products that match the selected category
   const filteredProducts = category
     ? products.filter((product) => product.acf.category === category)
@@ -17,11 +21,11 @@ function Home() {
 
   return (
     <>
-      <HeroForProductpage></HeroForProductpage>
+      <HeroForProductpage category={category}></HeroForProductpage>
 
       <div className={styling.shop}>
         <div className='shopTitle'>
-          <h1>ALL PRODUCTS</h1>
+          <h1>{category ? category.toUpperCase() : 'ALL PRODUCTS'}</h1>
         </div>
 
         <div className={styling.container}>

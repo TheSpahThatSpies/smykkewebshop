@@ -57,10 +57,13 @@ function Nav() {
         <Link to={"/"}><a href="/" class="block py-2 pl-3 pr-4 text-slate-950 rounded md:p-0" aria-current="page">Home</a></Link>
         </li>
         <li>
-          <Link to={"/products/ring"} class="block py-2 pl-3 pr-4 text-slate-950 rounded md:p-0 ">Rings</Link>
+          <Link to={"/products/rings"} class="block py-2 pl-3 pr-4 text-slate-950 rounded md:p-0 ">Rings</Link>
         </li>
         <li>
           <Link to={"/products/necklaces"} class="block py-2 pl-3 pr-4 text-slate-950 rounded md:p-0 ">Necklaces</Link>
+        </li>
+        <li>
+          <Link to={"/products/bracelets"} class="block py-2 pl-3 pr-4 text-slate-950 rounded md:p-0 ">Bracelets</Link>
         </li>
         <li>
           <Link to={"/"} class="block py-2 pl-3 pr-4 text-slate-950 rounded md:p-0">About</Link>
