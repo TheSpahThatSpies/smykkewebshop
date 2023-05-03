@@ -18,7 +18,7 @@ export default function Product(props) {
     <>
       <div className={styling.productContainer}>
       <Link to={`/productinfo/${id}`} product={props.product}>
-        <img alt='product' src={image} className={styling.productImg}></img>
+        <img alt='product' src={image} className={styling.productImg} ></img>
       </Link>
         <p className={styling.name}> {name} </p>
         <p className={styling.price}>{price} DKK</p>

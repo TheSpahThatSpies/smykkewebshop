@@ -1,6 +1,7 @@
 import React, {useContext}  from 'react';
 import { Link } from 'react-router-dom';
 import { ShopContext } from '../context/Shop-context';
+import './nav.css';
 
 
 
@@ -15,7 +16,7 @@ function Nav() {
   <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
   <Link to={"/"}>
   <a href='/' class="flex items-center">
-      <span class="self-center text-2xl font-semibold whitespace-nowrap text-slate-950">JOC</span>
+      <span class="self-center text-2xl font-thin whitespace-nowrap text-slate-950 hover:font-light ">JOC</span>
   </a>
   </Link>
   <div class="flex md:order-2">
@@ -52,21 +53,21 @@ function Nav() {
         </div>
         <input type="text" id="search-navbar" class="block w-full p-2 pl-10 text-sm text-gray-900 border border-gray-300 bg-gray-50 focus:ring-blue-500 focus:border-blue-500 " placeholder="Search..."></input>
       </div>
-      <ul class="flex flex-col p-4 md:p-0 mt-4 font-light rounded-lg  md:flex-row md:space-x-8 md:mt-0">
+      <ul class="flex flex-col p-4 md:p-0 mt-4 font-thin rounded-lg  md:flex-row md:space-x-8 md:mt-0">
         <li>
-        <Link to={"/"}><a href="/" class="block py-2 pl-3 pr-4 text-slate-950 rounded md:p-0" aria-current="page">Home</a></Link>
+        <Link to={"/"}><a href="/" className="block py-2 pl-3 pr-4 text-slate-950 rounded md:p-0 navlink" aria-current="page">Home</a></Link>
         </li>
         <li>
-          <Link to={"/products/rings"} class="block py-2 pl-3 pr-4 text-slate-950 rounded md:p-0 ">Rings</Link>
+          <Link to={"/products/rings"} className="block py-2 pl-3 pr-4 text-slate-950 rounded md:p-0 navlink">Rings</Link>
         </li>
         <li>
-          <Link to={"/products/necklaces"} class="block py-2 pl-3 pr-4 text-slate-950 rounded md:p-0 ">Necklaces</Link>
+          <Link to={"/products/necklaces"} className="block py-2 pl-3 pr-4 text-slate-950 rounded md:p-0 navlink">Necklaces</Link>
         </li>
         <li>
-          <Link to={"/products/bracelets"} class="block py-2 pl-3 pr-4 text-slate-950 rounded md:p-0 ">Bracelets</Link>
+          <Link to={"/products/bracelets"} className="block py-2 pl-3 pr-4 text-slate-950 rounded md:p-0 navlink">Bracelets</Link>
         </li>
         <li>
-          <Link to={"/products/earrings"} class="block py-2 pl-3 pr-4 text-slate-950 rounded md:p-0 ">Earrings</Link>
+          <Link to={"/products/earrings"} className="block py-2 pl-3 pr-4 text-slate-950 rounded md:p-0 navlink">Earrings</Link>
         </li>
       </ul>
     </div>
