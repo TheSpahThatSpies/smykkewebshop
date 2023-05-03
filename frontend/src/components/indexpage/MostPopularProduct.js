@@ -1,17 +1,28 @@
-import React from 'react'
+import React, { useContext}from 'react'
 import styling from './MostPopularProduct.module.css';
-
+import { ShopContext } from '../../context/Shop-context';
 
 export default function MostPopularProduct(props) {
+
+  const { id } = props;
+  const { name, price, image } = props.data;
+
+
+
+
+  const { addToCart, cartItems } = useContext(ShopContext);
+  const cartItemAmount = cartItems[id];
 
   return (
 
     <>
       <div className={styling.productContainer}>
-        <img alt='product' src={props.image} className={styling.productImg}></img>
-        <p className={styling.name}> {props.name} </p>
-        <p className={styling.price}>{props.price} DKK</p>
-        <button className={styling.btn}>Add to cart</button>
+        <img alt='product' src={image} className={styling.productImg}></img>
+        <p className={styling.name}> {name} </p>
+        <p className={styling.price}>{price} DKK</p>
+        <button className={styling.btn} onClick={() => {
+  addToCart(id);
+}} >Add to cart</button>
       </div>
     </>
  
