@@ -15,19 +15,14 @@ function Productinfo() {
   return (
 
   <>
-    <div className='container-2xl h-fit mx-auto p-3 flex flex-col md:flex-row'>
-        <div className='flex flex-col'>
-
-            <div className='h-96 mb-3'>
-                <img className='h-full w-full' alt='jewels' src={image} ></img>
-            </div>
-
-            <div className='flex flex-row'>
-                <div className='h-36 w-36 bg-black'></div><div className='h-36 w-36 ml-1 bg-black'></div>
+    <div className='container-2xl  mx-auto p-3 flex flex-col md:flex-row md:justify-center'>
+        <div className='flex flex-col md:w-1/2'>
+            <div  className='h-96 md:w-full mb-3'>
+                <img className='h-full w-full object-cover' alt='jewels' src={image} ></img>
             </div>
         </div>
 
-        <div className='md:ml-3'>
+        <div className='md:ml-3 w-1/2'>
             <p className='text-4xl'>{name}</p>
             <p className='text-lg'>{category}</p>
             <p className='text-md'>

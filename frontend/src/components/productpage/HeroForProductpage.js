@@ -1,8 +1,23 @@
 import React from 'react'
 import styling from '../productpage/HeroForProductpage.module.css';
-import banner from '../../images/je.jpeg';
+import banner1 from '../../images/rings.jpg';
+import banner2 from '../../images/necklaces.jpg';
+import banner3 from '../../images/bracelets.png';
+import banner4 from '../../images/earrings.jpg';
 
 export default function HeroForProductpage(props) {
+
+  let banner;
+  if (props.category === 'rings') {
+    banner = banner1;
+  } else if (props.category === 'necklaces') {
+    banner = banner2;
+  } else if (props.category === 'bracelets') {
+    banner = banner3;
+  } else if (props.category === 'earrings') {
+    banner = banner4;
+  }
+  
   return (
     <>
 
