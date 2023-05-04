@@ -29,22 +29,22 @@ function Productinfo() {
   return (
 
   <>
-  <nav aria-label="breadcrumb" class="w-full p-2  ">
-	<ol class="flex h-3 space-x-2 text-slate-950">
+  <nav aria-label="breadcrumb" class="w-full p-2 ml-2">
+	<ol class="flex text-sm h-3 space-x-2 text-slate-950">
 		<li class="flex items-center">
     <Link to={"/"} className="flex font-extralight items-center navlink">Home</Link>
 		</li>
 		<li class="flex items-center space-x-1">
-			<span class="text-gray-900 font-light">/</span>
+			<span class="text-gray-900 font-light text-sm mr-1">/</span>
       <Link to={`/products/${category}`} className="flex font-extralight items-center navlink">{category}</Link>		
     </li>
 		<li class="flex items-center space-x-1">
-			<span class="text-gray-900 font-light">/</span>
+			<span class="text-gray-900 font-light text-sm">/</span>
 			<a rel="noopener noreferrer" href="#" class="flex font-extralight items-center px-1 capitalize hover:underline hover:no-underline cursor-default">{name}</a>
 		</li>
 	</ol>
 </nav>
-    <div className='container-2xl  mx-auto p-3 flex flex-col md:flex-row md:justify-center mt-1'>
+    <div className='container-2xl  mx-auto p-3 flex flex-col md:flex-row md:justify-center'>
         <div className='flex flex-col md:w-1/2'>
             <div  className='h-96 md:w-full mb-3'>
                 <img className='h-full w-full object-cover' alt='jewels' src={image} ></img>
