@@ -1,6 +1,7 @@
 import React, { useContext } from 'react';
 import styling from './CartItem.module.css';
 import { ShopContext } from '../../context/Shop-context';
+import { Link } from 'react-router-dom';
 
 export default function CardItem({ id }) {
   const { cartItems, addToCart, removeFromCart, products } = useContext(
@@ -16,7 +17,9 @@ export default function CardItem({ id }) {
 
   return (
     <div className={styling.productContainer}>
+      <Link to={`/productinfo/${id}`}>
       <img alt="product" className={styling.img} src={image} />
+      </Link>
       <div className='text-left'>
       <p className='font-bold'> {name} </p>
       <p className='font-extralight'>{price} DKK</p>

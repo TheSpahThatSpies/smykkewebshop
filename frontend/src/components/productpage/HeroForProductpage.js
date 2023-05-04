@@ -22,8 +22,9 @@ export default function HeroForProductpage(props) {
   return (
     <>
 
-        <div className={styling.hero}>
+        <div className={`${styling.hero} `}>
             <img alt='jewels' src={banner}></img>
+            <div className="absolute bottom-0 left-0 right-0 top-0 h-full w-full overflow-hidden bg-black bg-fixed opacity-50"></div>
 
             <div className={styling.overlay}></div>
             <div className={styling.herocontent}>
