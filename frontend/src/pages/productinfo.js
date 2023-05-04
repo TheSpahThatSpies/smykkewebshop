@@ -32,14 +32,14 @@ function Productinfo() {
   <nav aria-label="breadcrumb" class="w-full p-2  ">
 	<ol class="flex h-3 space-x-2 text-slate-950">
 		<li class="flex items-center">
-			<a rel="noopener noreferrer" href="#" title="Back to homepage" class="flex font-extralight items-center hover:underline">Home</a>
+    <Link to={"/"} className="flex font-extralight items-center navlink">Home</Link>
 		</li>
 		<li class="flex items-center space-x-1">
-			<span class="text-gray-900">/</span>
-			<a rel="noopener noreferrer" href="#" class="flex font-extralight items-center px-1 capitalize hover:underline">{category}</a>
-		</li>
+			<span class="text-gray-900 font-light">/</span>
+      <Link to={`/products/${category}`} className="flex font-extralight items-center navlink">{category}</Link>		
+    </li>
 		<li class="flex items-center space-x-1">
-			<span class="text-gray-900">/</span>
+			<span class="text-gray-900 font-light">/</span>
 			<a rel="noopener noreferrer" href="#" class="flex font-extralight items-center px-1 capitalize hover:underline hover:no-underline cursor-default">{name}</a>
 		</li>
 	</ol>
