@@ -1,5 +1,4 @@
 .navlink {
-	color: #18272F;
   position: relative;
   text-decoration: none;
 }
@@ -22,3 +21,4 @@
   transform-origin: left;
   transform: scaleX(1);
 }
+
