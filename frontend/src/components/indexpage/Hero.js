@@ -18,16 +18,16 @@ export default function hero() {
             <ul class="flex p-4 md:p-0 md:mt-6 font-thin rounded-lg justify-evenly md:justify-normal  flex-row md:space-x-8 ">
       
               <li>
-                <Link to={"/products/rings"} className="block py-2 pl-3 pr-4 text-white rounded md:p-0 navlink">Rings</Link>
+                <Link to={"/products/rings"} className={`${styling.herolink} block py-2 pl-3 pr-4 text-white rounded md:p-0 herolink`}>Rings</Link>
               </li>
               <li>
-                <Link to={"/products/necklaces"} className="block py-2 pl-3 pr-4 text-white rounded md:p-0 navlink">Necklaces</Link>
+                <Link to={"/products/necklaces"} className={`${styling.herolink} block py-2 pl-3 pr-4 text-white rounded md:p-0 herolink`}>Necklaces</Link>
               </li>
               <li>
-                <Link to={"/products/bracelets"} className="block py-2 pl-3 pr-4 text-white rounded md:p-0 navlink">Bracelets</Link>
+                <Link to={"/products/bracelets"} className={`${styling.herolink} block py-2 pl-3 pr-4 text-white rounded md:p-0 herolink`}>Bracelets</Link>
               </li>
               <li>
-                <Link to={"/products/earrings"} className="block py-2 pl-3 pr-4 text-white rounded md:p-0 navlink">Earrings</Link>
+                <Link to={"/products/earrings"} className={`${styling.herolink} block py-2 pl-3 pr-4 text-white rounded md:p-0 herolink`}>Earrings</Link>
               </li>
             </ul>
         </div>
