@@ -3,7 +3,7 @@
     width: 100%;
     margin: 0px 10px;
     margin-bottom: 50px;
-    text-align: center;
+    text-align: left;
 }
 
 
@@ -34,10 +34,12 @@
 .name {
     margin-bottom: 5px;
     margin-top: 5px;
+    font-weight: bold;
 }
 
 .price {
     margin-bottom: 5px;
+    font-weight: lighter;
 }
 
 @media screen and (min-width: 500px) {

@@ -3,17 +3,17 @@
     width: 100%;
     margin: 0px 10px;
     margin-bottom: 50px;
-    text-align: center;
+    text-align: left;
     margin-bottom: 40px !important;
+
 }
 
 
 
 .productImg {
     margin: auto;
-    height: 150px;
-    width: 150px;
-    height: 120px;
+    height: 300px;
+    width: 100%;
 }
 
 .btn {
@@ -36,10 +36,12 @@
 .name {
     margin-bottom: 5px;
     margin-top: 5px;
+    font-weight: bold;
 }
 
 .price {
     margin-bottom: 5px;
+    font-weight: lighter;
 }
 
 @media screen and (min-width: 500px) {
@@ -85,7 +87,8 @@
 
     .productImg {
         margin: auto;
-        width: 150px;
+        width: 100%;
+        height: 300px;
     }
     
 
