@@ -17,9 +17,11 @@ export default function CardItem({ id }) {
   return (
     <div className={styling.productContainer}>
       <img alt="product" className={styling.img} src={image} />
-      <p className={styling.name}> {name} </p>
-      <p className={styling.price}>{price} DKK</p>
-      <div className="howMany">
+      <div className='text-left'>
+      <p className='font-bold'> {name} </p>
+      <p className='font-extralight'>{price} DKK</p>
+      </div>
+      <div className={styling.howMany}>
         <button className={styling.btnn} onClick={() => removeFromCart(id)}>
           -
         </button>

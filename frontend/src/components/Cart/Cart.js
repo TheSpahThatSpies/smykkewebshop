@@ -10,7 +10,7 @@ export default function Card() {
 
   const UI = totalAmount > 0 ?
     <div className={styling.container}>
-      <h1 className={styling.overskrift}>your cart items</h1>
+      <h1 className={styling.overskrift}>Your cart items</h1>
       <ul class=" divide-y divide-gray-200 dark:divide-gray-700">
         <li className="listtt">
 

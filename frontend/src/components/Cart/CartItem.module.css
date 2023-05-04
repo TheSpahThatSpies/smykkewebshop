@@ -1,25 +1,23 @@
 
 .productContainer {
-    width: 90%;
+    width: 99%;
     background: #ffffff;
-    justify-content: space-evenly;
+    justify-content: space-between;
     align-items: center;
     display: flex;
     text-align: center;
-    padding: 20px 0px;
+    min-height: 125px;
+    max-height: 125px;
     margin: 20px auto;
-    border-radius: 10px;
+    border-bottom: solid 1px;
+    border-top: solid 1px;
 }
 
 .img {
-    width: 50px;
+    height: 100px;
+    width: 100px;
 }
 
-
-.productImg {
-    margin: auto;
-    width: 150px;
-}
 
 .btn {
     border: 1px solid black;
@@ -46,9 +44,7 @@
 
 .howMany {
     display: flex;
-    width: 100%;
-    justify-content: space-around;
-    color: white;
+    flex-direction: row;
     
 }
 
@@ -57,3 +53,10 @@
     text-align: center;
     margin: 0px 15px;
 }
+
+@media (max-width: 550px) {
+    .howMany {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+  }
