@@ -16,7 +16,7 @@ function Nav() {
   <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
   <Link to={"/"}>
   <a href='/' class="flex items-center">
-      <span class="self-center text-2xl font-thin whitespace-nowrap text-slate-950 hover:font-light ">JOC</span>
+      <span class="self-center text-2xl font-medium	 whitespace-nowrap text-slate-950">JOC</span>
   </a>
   </Link>
   <div class="flex md:order-2">
