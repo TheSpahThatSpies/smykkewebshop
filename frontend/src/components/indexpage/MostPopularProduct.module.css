@@ -11,7 +11,7 @@
 .productImg {
     margin: auto;
     height: 300px;
-    width: 150px;
+    width: 100%;
 }
 
 .btn {
@@ -76,16 +76,21 @@
 
 
     .productContainer {
-        width: fit-content;
+        width: 20%;
         margin: 0px 10px;
         margin-bottom: 0px;
     }
 
     .productImg {
         margin: auto;
-        width: 150px;
+        width: 100%;
     }
     
 
 
+  }
+  @media (max-width: 1100px) {
+    .productContainer {
+        margin-top: 10px;
+    }
   }
