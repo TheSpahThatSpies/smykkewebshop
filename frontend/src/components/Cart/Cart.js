@@ -8,7 +8,7 @@ export default function Card() {
   const { cartItems, getTotalCartAmount, products } = useContext(ShopContext);
   const totalAmount = getTotalCartAmount();
 
-  const UI =
+  const UI = totalAmount > 0 ?
     <div className={styling.container}>
       <h1 className={styling.overskrift}>your cart items</h1>
       <ul class=" divide-y divide-gray-200 dark:divide-gray-700">
@@ -28,7 +28,7 @@ export default function Card() {
         </Link>
         <button className={styling.checkOut}>Check out</button>
       </div>
-    </div>
+    </div> : <p className={styling.emptyBasket}>Your basket is empty.</p>
 
   return <>{UI}</>;
 }
