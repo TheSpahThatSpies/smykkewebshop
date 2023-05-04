@@ -20,7 +20,7 @@ export default function ShopcontextProvider(props) {
 
   useEffect(() => {
     const fetchProducts = async () => {
-      const response = await fetch('http://jacobgervin.dk/wp-json/wp/v2/product');
+      const response = await fetch('https://jacobgervin.dk/wp-json/wp/v2/product');
       const data = await response.json();
       setProducts(data);
       
