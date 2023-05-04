@@ -19,13 +19,23 @@ export default function ShopcontextProvider(props) {
   const [cartItems, setCartItems] = useState({});
 
   useEffect(() => {
-    const fetchProducts = async () => {
-      const response = await fetch('https://jacobgervin.dk/wp-json/wp/v2/product');
-      const data = await response.json();
-      setProducts(data);
-      
+    const fetchAllProducts = async () => {
+      let allProducts = [];
+      let currentPage = 1;
+      let totalPages = 1;
+  
+      while (currentPage <= totalPages) {
+        const response = await fetch(`https://jacobgervin.dk/wp-json/wp/v2/product?per_page=100&page=${currentPage}`);
+        const data = await response.json();
+        allProducts = [...allProducts, ...data];
+        currentPage++;
+        totalPages = response.headers.get('x-wp-totalpages');
+      }
+  
+      setProducts(allProducts);
     };
-    fetchProducts();
+  
+    fetchAllProducts();
   }, [setProducts]);
   
   useEffect(() => {
