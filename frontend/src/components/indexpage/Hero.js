@@ -14,22 +14,8 @@ export default function hero() {
 
             <div className={styling.herocontent}>
             <h1>Jewelry by JOC</h1>
-            <p>Handcrafted by professionals</p>
-            <ul class="flex p-4 md:p-0 md:mt-6 font-thin rounded-lg justify-evenly md:justify-normal  flex-row md:space-x-8 ">
-      
-              <li>
-                <Link to={"/products/rings"} className={`${styling.herolink} block py-2 pl-3 pr-4 text-white rounded md:p-0 herolink`}>Rings</Link>
-              </li>
-              <li>
-                <Link to={"/products/necklaces"} className={`${styling.herolink} block py-2 pl-3 pr-4 text-white rounded md:p-0 herolink`}>Necklaces</Link>
-              </li>
-              <li>
-                <Link to={"/products/bracelets"} className={`${styling.herolink} block py-2 pl-3 pr-4 text-white rounded md:p-0 herolink`}>Bracelets</Link>
-              </li>
-              <li>
-                <Link to={"/products/earrings"} className={`${styling.herolink} block py-2 pl-3 pr-4 text-white rounded md:p-0 herolink`}>Earrings</Link>
-              </li>
-            </ul>
+            <p>Handcrafted by Professionals</p>
+            <Link to={"/products"} ><button>All Products</button></Link>
         </div>
 
         </div>

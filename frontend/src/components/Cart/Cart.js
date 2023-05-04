@@ -23,10 +23,13 @@ export default function Card() {
         <p>
           total: <span>{totalAmount} DKK</span>
         </p>
-        <Link to={'/'}>
-          <button className={styling.continue}>Continue shopping</button>
-        </Link>
+        <div className='flex flex-col md:flex-row w-full align-center items-center justify-center mt-5'>
         <button className={styling.checkOut}>Check out</button>
+        <Link to={'/'} className={styling.continue}>
+         Continue shopping
+        </Link>
+        </div>
+
       </div>
     </div> : <p className={styling.emptyBasket}>Your basket is empty.</p>
 
