@@ -4,10 +4,11 @@ import banner1 from '../../images/rings.jpg';
 import banner2 from '../../images/necklaces.jpg';
 import banner3 from '../../images/bracelets.png';
 import banner4 from '../../images/earrings.jpg';
+import banner5 from '../../images/jewelry.png';
 
 export default function HeroForProductpage(props) {
 
-  let banner;
+  let banner = banner5;
   if (props.category === 'rings') {
     banner = banner1;
   } else if (props.category === 'necklaces') {
@@ -16,7 +17,7 @@ export default function HeroForProductpage(props) {
     banner = banner3;
   } else if (props.category === 'earrings') {
     banner = banner4;
-  }
+  } 
   
   return (
     <>
@@ -26,7 +27,7 @@ export default function HeroForProductpage(props) {
 
             <div className={styling.overlay}></div>
             <div className={styling.herocontent}>
-                <h1>{props.category ? ` ${props.category.toUpperCase()}` : ''} by JOC</h1>
+                <h1>{props.category ? ` ${props.category.toUpperCase()}` : 'All Products'} by JOC</h1>
                 <p>Handcrafted by professionals</p>
                 <button>Products</button>
             </div>

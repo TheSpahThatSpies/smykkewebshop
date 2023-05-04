@@ -11,7 +11,7 @@ function Home() {
   const { category } = useParams();
 
   useEffect(() => {
-    document.title = category ? `${category.toUpperCase()} | My Shop` : 'My Shop';
+    document.title = category ? `${category.toUpperCase()} | BY JOC ` : 'BY JOC';
   }, [category]);
 
   // Filter the products that match the selected category

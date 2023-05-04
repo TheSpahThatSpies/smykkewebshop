@@ -61,7 +61,7 @@ function Nav() {
       </div>
       <ul class="flex flex-col p-4 md:p-0 mt-4 font-thin rounded-lg  md:flex-row md:space-x-8 md:mt-0">
         <li>
-        <Link to={"/"}><a href="/" className="block py-2 pl-3 pr-4 text-slate-950 rounded md:p-0 navlink" aria-current="page">Home</a></Link>
+          <Link to={"/products"} className="block py-2 pl-3 pr-4 text-slate-950 rounded md:p-0 navlink">All Products</Link>
         </li>
         <li>
           <Link to={"/products/rings"} className="block py-2 pl-3 pr-4 text-slate-950 rounded md:p-0 navlink">Rings</Link>
