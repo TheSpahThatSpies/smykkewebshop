@@ -15,9 +15,8 @@ export default function Footer() {
         <div className={styling.first}>
             <h1>More about our company</h1>
             <p>Your go-to online jewelry store
-with handcrafted by professionals, our products are unique and more
-Find the perfect accessory to complement your style
-From rings to necklaces, we have it all, so shop with a smile!</p>
+with jewelry handcrafted by professionals, our products are unique and beautiful, just like you.
+Find the perfect accessory to complement your style, from rings to necklaces, we have it all.</p>
         </div>
 
         <div className={styling.second}>
