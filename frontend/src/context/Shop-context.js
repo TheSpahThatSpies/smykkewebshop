@@ -38,6 +38,7 @@ export default function ShopcontextProvider(props) {
     fetchAllProducts();
   }, [setProducts]);
   
+  
   useEffect(() => {
     setCartItems(getDefaultCart(products));
   }, [products]);

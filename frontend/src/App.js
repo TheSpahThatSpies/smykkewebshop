@@ -19,7 +19,9 @@ function App() {
             <Route path='/cart' element={<Cart />} />
             <Route path='/products' element={<ProductPage />} />
             <Route path='/products/:category' element={<ProductPage />} />
+            <Route path="/products/search/:searchQuery" element={<ProductPage />} />
             <Route path="/productinfo/:id" element={<Productinfo />} />
+
         </Routes>
     </Shopcontext>
   </>

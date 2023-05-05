@@ -1,4 +1,4 @@
-import { useContext, useEffect } from 'react';
+import { useContext } from 'react';
 import { useParams } from 'react-router-dom';
 import Product from './Product';
 import Footer from '../indexpage/Footer';
@@ -7,29 +7,30 @@ import HeroForProductpage from './HeroForProductpage';
 import { ShopContext } from '../../context/Shop-context';
 
 function Home() {
-  const { products, setProducts } = useContext(ShopContext);
-  const { category } = useParams();
+  const { products } = useContext(ShopContext);
+  const { category, searchQuery } = useParams();
 
-  useEffect(() => {
-    document.title = category ? `${category.toUpperCase()} | BY JOC ` : 'BY JOC';
-  }, [category]);
-
-  // Filter the products that match the selected category
-  const filteredProducts = category
+  // Filter the products based on the search query or category
+  const filteredProducts = searchQuery
+  ? products.filter((product) =>
+      product.acf.name.toLowerCase().includes(searchQuery.toLowerCase())
+    )
+  : category
     ? products.filter((product) => product.acf.category === category)
     : products;
 
+
   return (
     <>
-      <HeroForProductpage category={category}></HeroForProductpage>
+      <HeroForProductpage category={category} searchQuery={searchQuery} ></HeroForProductpage>
 
       <div className={styling.shop}>
         <div className='shopTitle'>
-          <h1>{category ? category.toUpperCase() : 'ALL PRODUCTS'}</h1>
+        <h1>{searchQuery ? `SEARCH RESULTS FOR: ${searchQuery.toLowerCase()}` : category ? category.toUpperCase() : 'ALL PRODUCTS'}</h1>
         </div>
 
         <div className={styling.container}>
-        {filteredProducts.map((product) => (
+          {filteredProducts.map((product) => (
             <Product key={product.id} id={product.id} data={product.acf} />
           ))}
         </div>
@@ -39,5 +40,6 @@ function Home() {
     </>
   );
 }
+
 
 export default Home;
