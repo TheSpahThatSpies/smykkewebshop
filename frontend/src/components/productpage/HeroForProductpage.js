@@ -30,7 +30,6 @@ export default function HeroForProductpage({ category, searchQuery }) {
             <div className={styling.herocontent}>
             <h1>{searchQuery ? `Results for "${searchQuery}"` : category ? ` ${category.toUpperCase()}` : 'All Products'}</h1>
                 <p>Handcrafted by professionals</p>
-                <button>Products</button>
             </div>
         </div>  
 

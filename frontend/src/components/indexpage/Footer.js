@@ -14,7 +14,10 @@ export default function Footer() {
         
         <div className={styling.first}>
             <h1>More about our company</h1>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+            <p>Your go-to online jewelry store
+with handcrafted by professionals, our products are unique and more
+Find the perfect accessory to complement your style
+From rings to necklaces, we have it all, so shop with a smile!</p>
         </div>
 
         <div className={styling.second}>
