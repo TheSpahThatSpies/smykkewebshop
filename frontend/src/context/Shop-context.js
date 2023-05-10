@@ -25,7 +25,7 @@ export default function ShopcontextProvider(props) {
       let totalPages = 1;
   
       while (currentPage <= totalPages) {
-        const response = await fetch(`https://jacobgervin.dk/wpapi/wp-json/wp/v2/product?per_page=100&page=${currentPage}`);
+        const response = await fetch(`https://wpapi.jacobgervin.dk/wp-json/wp/v2/product?per_page=100&page=${currentPage}`);
         const data = await response.json();
         allProducts = [...allProducts, ...data];
         currentPage++;
